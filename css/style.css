@@ -1,0 +1,84 @@
+*{font-size: 100%;}
+body{
+    margin:0;
+    background: black fixed no-repeat;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    background: black;
+    margin:0;
+    padding:0;
+    color: darkgoldenrod;
+}
+nav{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: gray;
+    font-family: monospace;
+    font-size: 1.3rem;
+    letter-spacing: .001rem;
+    margin: 1rem;
+    transition: .5s;
+}
+nav a:hover{
+   color: lightgray;
+   border-left: darkgoldenrod 5px solid; 
+   transform: scale(1.1) ;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height:80vh;
+}
+.cards article{
+    height: 100%;
+    width: 0;
+    margin:5%;
+    border-radius: 50%;
+    transition: 2s;
+}
+.cards article:hover{
+    height: 40rem;
+    width: 40rem;
+    margin:5%;
+    border-radius: 50%;
+}
+.cards article:nth-child(1){
+    background: url("../ff12/img/1.png") fixed no-repeat;
+    background-position: 1rem;
+    background-size: contain;
+}
+.cards article:nth-child(2){
+    background: url("../superMario/img/9.png") fixed no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.cards article:nth-child(2) a{
+    color:darkred;
+}
+.cards a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:5rem;
+    text-align: center;
+    color: steelblue;
+    height:20vh;
+    width:55vh;
+    font-size: 5rem;
+    padding:2rem;
+}
+.cards aside{
+    width: 100%;
+    background: rgba(255,255,255,.1);
+    width: 40%;
+    text-align: center;
+    justify-content: right;
+}
